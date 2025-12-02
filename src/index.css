@@ -4,81 +4,91 @@
 
 @layer base {
   :root {
-    /* Base dark theme - Deep navy/black */
-    --background: 230 25% 5%;
-    --foreground: 210 20% 90%;
+    /* Base dark theme - Deep Dark Mode (#0f172a) */
+    --background: 222 47% 11%;
+    --foreground: 210 20% 92%;
 
-    /* Card surfaces */
-    --card: 230 20% 8%;
-    --card-foreground: 210 20% 90%;
-    --card-hover: 230 20% 12%;
+    /* Card surfaces - Cockpit style */
+    --card: 222 40% 8%;
+    --card-foreground: 210 20% 92%;
+    --card-hover: 222 35% 12%;
 
     /* Popover */
-    --popover: 230 20% 8%;
-    --popover-foreground: 210 20% 90%;
+    --popover: 222 40% 8%;
+    --popover-foreground: 210 20% 92%;
 
-    /* Primary - Electric Blue (Crypto) */
-    --primary: 195 100% 50%;
-    --primary-foreground: 230 25% 5%;
-    --primary-glow: 195 100% 60%;
+    /* Primary - Electric Cyan (Data) */
+    --primary: 185 100% 50%;
+    --primary-foreground: 222 47% 11%;
+    --primary-glow: 185 100% 60%;
 
     /* Secondary */
-    --secondary: 230 20% 15%;
+    --secondary: 222 30% 15%;
     --secondary-foreground: 210 20% 80%;
 
     /* Muted */
-    --muted: 230 15% 15%;
-    --muted-foreground: 215 15% 50%;
+    --muted: 222 25% 13%;
+    --muted-foreground: 215 15% 55%;
 
     /* Accent - Neon Green (Bullish) */
-    --accent: 160 100% 45%;
-    --accent-foreground: 230 25% 5%;
+    --accent: 145 100% 50%;
+    --accent-foreground: 222 47% 11%;
 
-    /* Neon Colors */
-    --neon-green: 160 100% 50%;
-    --neon-green-glow: 160 100% 60%;
-    --neon-red: 345 100% 60%;
-    --neon-red-glow: 345 100% 70%;
-    --neon-gold: 45 100% 50%;
-    --neon-gold-glow: 45 100% 60%;
-    --neon-blue: 195 100% 50%;
-    --neon-blue-glow: 195 100% 60%;
+    /* Neon Colors - High contrast for data */
+    --neon-green: 145 100% 50%;
+    --neon-green-glow: 145 100% 65%;
+    --neon-red: 0 100% 60%;
+    --neon-red-glow: 0 100% 70%;
+    --neon-gold: 38 100% 55%;
+    --neon-gold-glow: 38 100% 65%;
+    --neon-blue: 185 100% 50%;
+    --neon-blue-glow: 185 100% 60%;
     --neon-purple: 270 100% 65%;
+    --neon-amber: 25 100% 55%;
+    --neon-amber-glow: 25 100% 65%;
 
     /* Destructive */
-    --destructive: 345 100% 60%;
+    --destructive: 0 100% 60%;
     --destructive-foreground: 210 40% 98%;
 
     /* Border & Input */
-    --border: 230 20% 18%;
-    --border-glow: 195 100% 50%;
-    --input: 230 20% 12%;
-    --ring: 195 100% 50%;
+    --border: 222 30% 20%;
+    --border-glow: 185 100% 50%;
+    --input: 222 35% 12%;
+    --ring: 185 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
-    /* Gradients */
-    --gradient-card: linear-gradient(135deg, hsl(230 20% 10%) 0%, hsl(230 25% 6%) 100%);
-    --gradient-glow-green: radial-gradient(ellipse at center, hsl(160 100% 50% / 0.15) 0%, transparent 70%);
-    --gradient-glow-red: radial-gradient(ellipse at center, hsl(345 100% 60% / 0.15) 0%, transparent 70%);
-    --gradient-glow-blue: radial-gradient(ellipse at center, hsl(195 100% 50% / 0.15) 0%, transparent 70%);
-    --gradient-glow-gold: radial-gradient(ellipse at center, hsl(45 100% 50% / 0.15) 0%, transparent 70%);
+    /* Gradients - Cockpit feel */
+    --gradient-card: linear-gradient(145deg, hsl(222 40% 10%) 0%, hsl(222 47% 7%) 100%);
+    --gradient-card-highlight: linear-gradient(145deg, hsl(222 35% 12%) 0%, hsl(222 40% 8%) 100%);
+    --gradient-glow-green: radial-gradient(ellipse at center, hsl(145 100% 50% / 0.2) 0%, transparent 70%);
+    --gradient-glow-red: radial-gradient(ellipse at center, hsl(0 100% 60% / 0.2) 0%, transparent 70%);
+    --gradient-glow-blue: radial-gradient(ellipse at center, hsl(185 100% 50% / 0.2) 0%, transparent 70%);
+    --gradient-glow-gold: radial-gradient(ellipse at center, hsl(38 100% 55% / 0.2) 0%, transparent 70%);
+    --gradient-glow-amber: radial-gradient(ellipse at center, hsl(25 100% 55% / 0.2) 0%, transparent 70%);
 
     /* Shadows */
-    --shadow-neon-green: 0 0 20px hsl(160 100% 50% / 0.3), 0 0 40px hsl(160 100% 50% / 0.1);
-    --shadow-neon-red: 0 0 20px hsl(345 100% 60% / 0.3), 0 0 40px hsl(345 100% 60% / 0.1);
-    --shadow-neon-blue: 0 0 20px hsl(195 100% 50% / 0.3), 0 0 40px hsl(195 100% 50% / 0.1);
-    --shadow-neon-gold: 0 0 20px hsl(45 100% 50% / 0.3), 0 0 40px hsl(45 100% 50% / 0.1);
+    --shadow-neon-green: 0 0 20px hsl(145 100% 50% / 0.4), 0 0 40px hsl(145 100% 50% / 0.15);
+    --shadow-neon-red: 0 0 20px hsl(0 100% 60% / 0.4), 0 0 40px hsl(0 100% 60% / 0.15);
+    --shadow-neon-blue: 0 0 20px hsl(185 100% 50% / 0.4), 0 0 40px hsl(185 100% 50% / 0.15);
+    --shadow-neon-gold: 0 0 20px hsl(38 100% 55% / 0.4), 0 0 40px hsl(38 100% 55% / 0.15);
+    --shadow-neon-amber: 0 0 20px hsl(25 100% 55% / 0.4), 0 0 40px hsl(25 100% 55% / 0.15);
 
     /* Sidebar */
-    --sidebar-background: 230 25% 5%;
-    --sidebar-foreground: 210 20% 90%;
-    --sidebar-primary: 195 100% 50%;
-    --sidebar-primary-foreground: 230 25% 5%;
-    --sidebar-accent: 230 20% 15%;
-    --sidebar-accent-foreground: 210 20% 90%;
-    --sidebar-border: 230 20% 18%;
-    --sidebar-ring: 195 100% 50%;
+    --sidebar-background: 222 47% 11%;
+    --sidebar-foreground: 210 20% 92%;
+    --sidebar-primary: 185 100% 50%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 222 30% 15%;
+    --sidebar-accent-foreground: 210 20% 92%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 185 100% 50%;
+
+    /* Gauge colors */
+    --gauge-low: 145 100% 50%;
+    --gauge-mid: 38 100% 55%;
+    --gauge-high: 0 100% 60%;
   }
 }
 
